@@ -8,7 +8,7 @@ api.interceptors.response.use(
   (response) => response,
   (error) => {
     if (error.request) {
-      throw new Error('Not found.');
+      throw new Error('Network error, try again later.');
     } else {
       throw new Error('An unexpected error occurred.');
     }
