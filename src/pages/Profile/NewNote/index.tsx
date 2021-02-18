@@ -1,11 +1,11 @@
-import React, { useCallback, useEffect, useState } from 'react';
+import React, { useCallback, useState } from 'react';
 import Dialog from '@material-ui/core/Dialog';
 import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import Button from '@material-ui/core/Button';
 import { PulseLoader } from 'react-spinners';
-import { Grid, IconButton, TextField, Typography } from '@material-ui/core';
+import { Grid, TextField, Typography } from '@material-ui/core';
 import api from '../../../services/backend/api';
 
 interface NewNoteProps {
@@ -55,7 +55,7 @@ export const NewNote = (props: NewNoteProps) => {
                     </Typography>
             </DialogTitle>
 
-            <DialogContent style={{ height: 230, padding: '0 16px' }}>
+            <DialogContent style={{ height: 250, padding: '0 16px' }}>
                 <Grid container spacing={2} alignItems="center">
                     <form>
                         <Grid item style={{ margin: 16 }}>

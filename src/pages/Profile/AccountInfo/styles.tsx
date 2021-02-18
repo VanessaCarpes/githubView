@@ -1,4 +1,4 @@
-import { createStyles, LinearProgress, withStyles } from "@material-ui/core";
+import { createStyles } from "@material-ui/core";
 import theme from "../../../styles/theme";
 
 export const styles = createStyles({
@@ -6,8 +6,8 @@ export const styles = createStyles({
         padding: theme.spacing(2, 2),
     },
     avatar: {
-        width: theme.spacing(30),
-        height: theme.spacing(30),
+        width: 200,
+        height: 200,
         paddingBottom: theme.spacing(3),
     },
     list: {

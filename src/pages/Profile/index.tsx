@@ -4,7 +4,6 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import Typography from '@material-ui/core/Typography';
 import { withRouter } from 'react-router-dom';
 import { Paper } from '@material-ui/core';
-import { Language } from '@material-ui/icons';
 import { styles, BorderLinearProgress } from './styles';
 import Header from '../components/Header';
 import AccountInfo from './AccountInfo';
@@ -21,7 +20,7 @@ export interface Account {
     public_repos: number;
 }
 
-interface Language {
+export interface Language {
     name: string;
     count: number;
     percent?: number;
